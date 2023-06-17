@@ -1,37 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>About Us</title>
+  <title>Incubation Center - Mission and Vision</title>
   <style>
-    /* Add your custom CSS styles here */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      background-color: #f2f2f2;
     }
-    
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
     h1 {
+      text-align: center;
       color: #333;
     }
-    
-    p {
-      line-height: 1.5;
+
+    .mission-vision-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 30px;
+    }
+
+    .mission,
+    .vision {
+      flex: 1;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .mission h2,
+    .vision h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .mission p,
+    .vision p {
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px;
+      }
+
+      .mission-vision-container {
+        flex-direction: column;
+      }
+
+      .mission,
+      .vision {
+        margin-bottom: 30px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>About Us</h1>
-  
-  <h2>Company Overview</h2>
-  <p>Insert your company overview here. Describe the history, mission, and values of your company.</p>
-  
-  <h2>Our Team</h2>
-  <p>Introduce your team members and provide some information about their roles and expertise.</p>
-  
-  <h2>Our Services</h2>
-  <p>Explain the products or services you offer and highlight their unique features and benefits.</p>
-  
-  <h2>Contact Us</h2>
-  <p>Include your contact information, such as phone number, email address, and physical address.</p>
+  <div class="container">
+    <h1>Our Mission and Vision</h1>
+    <div class="mission-vision-container">
+      <div class="mission">
+        <h2>Mission</h2>
+        <p>To empower and support aspiring entrepreneurs in turning their innovative ideas into successful businesses by providing comprehensive incubation services, mentorship, and access to resources.</p>
+      </div>
+      <div class="vision">
+        <h2>Vision</h2>
+        <p>To be a leading incubation center that fosters a thriving entrepreneurial ecosystem, driving economic growth and societal impact through the cultivation of innovative startups and the nurturing of entrepreneurial talent.</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

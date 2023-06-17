@@ -43,31 +43,28 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
         <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
-            <h2 class="mb-2 text-white">Incubation</h2>
+            <h2 class="mb-2 text-white">JNEC_Incubation</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="welcome" class="nav-item nav-link active">Home</a>
+                <a href="#" class="nav-item nav-link active">Home</a>
                 <a href="about" class="nav-item nav-link">About</a>
                 <a href="service.html" class="nav-item nav-link">Application</a>
-                <a href="service.html" class="nav-item nav-link">Stakeholders</a>
-                <a href="service.html" class="nav-item nav-link">Incubatees</a>
-                <a href="service.html" class="nav-item nav-link">Events</a>
-                <a href="contact.html" class="nav-item nav-link">Feedback</a>
+                <a href="eventretrieve" class="nav-item nav-link">Events</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Assistance</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="price.html" class="dropdown-item">Advisory Board</a>
-                        <a href="" class="dropdown-item">Mentors</a>
+                        <a href="advisoryretrieve" class="dropdown-item">Advisory Board</a>
+                        <a href="mentorsretrieve" class="dropdown-item">Mentors</a>
                         <a href="feature.html" class="dropdown-item">Coaching tools and facilities</a>
                     </div>
                 </div>
                 <a href="login" class="nav-item nav-link">Login</a>
             </div>
-            <h4 class="m-0 pe-lg-5 d-none d-lg-block"><i class="fa fa-headphones text-primary me-3"></i>17924980</h4>
+            <h4 class="m-0 pe-lg-5 d-none d-lg-block"><i class="fa fa-headphones text-primary me-3"></i>17915066</h4>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -142,7 +139,6 @@
     </div>
     <!-- Fact End -->
 
-
     <!-- Service Start -->
     <div class="container-xxl py-5">
         <div class="container py-5">
@@ -156,9 +152,9 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-1.jpg" alt="">
                         </div>
-                        <h4 class="mb-3">Air Freight</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                        <h4 class="mb-3">Stakeholders</h4>
+                        <p>        <p>Alone we can do so little; together we can achieve so much. Stakeholders play a vital role in collaboration and collective success.</p>
+                        <a class="btn-slide mt-2" href="stakeholderget"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
@@ -166,9 +162,9 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-2.jpg" alt="">
                         </div>
-                        <h4 class="mb-3">Ocean Freight</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                        <h4 class="mb-3">Incubatees</h4>
+                        <p>Successful incubatees are like seeds that flourish under the right conditions, nurtured with guidance and support, they grow into mighty oaks of innovation and achievement</p>
+                        <a class="btn-slide mt-2" href="incubateeretrieve"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
@@ -176,41 +172,10 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-3.jpg" alt="">
                         </div>
-                        <h4 class="mb-3">Road Freight</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                        <h4 class="mb-3">Feedback</h4>
+                        <p>Feedback is the compass that guides improvement. Embrace it, for it holds the key to unlocking growth and success</p>
+                        <a class="btn-slide mt-2" href="feedback"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-4.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Train Freight</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-5.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Customs Clearance</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-6.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Warehouse Solutions</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
