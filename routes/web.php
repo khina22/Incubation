@@ -25,6 +25,8 @@ Route::get('about', function () {
 Route::get('/login', [App\Http\Controllers\incubation\IncubationController::class, 'login'])->name('login');
 Route::post('/userlogin', [App\Http\Controllers\incubation\IncubationController::class, 'userlogin'])->name('userlogin');
 Route::get('pages/admindashboard', [App\Http\Controllers\incubation\IncubationController::class, 'admindashboard'])->name('pages/admindashboard');
+Route::get('/mentors', [App\Http\Controllers\incubation\IncubationController::class, 'mentors'])->name('mentors');
+Route::post('/mentorsadd', [App\Http\Controllers\incubation\IncubationController::class, 'mentorsadd'])->name('mentorsadd');
 
 
 

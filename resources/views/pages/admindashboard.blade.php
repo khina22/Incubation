@@ -22,7 +22,7 @@
             </a>
         </li>
         <li class="menu-item">
-            <a href="/mentor">
+            <a href="/mentors">
                 <i class="fa fa-list-alt"></i>
                 <span>Mentor</span>
             </a>
@@ -51,6 +51,5 @@
                 <span>Events</span>
             </a>
         </li>
-
     </ul>
 </aside>
