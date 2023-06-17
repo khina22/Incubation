@@ -21,6 +21,10 @@ Route::get('about', function () {
     return view('pages/about');
 });
 
+
 Route::get('/login', [App\Http\Controllers\incubation\IncubationController::class, 'login'])->name('login');
 Route::post('/userlogin', [App\Http\Controllers\incubation\IncubationController::class, 'userlogin'])->name('userlogin');
+Route::get('pages/admindashboard', [App\Http\Controllers\incubation\IncubationController::class, 'admindashboard'])->name('pages/admindashboard');
+
+
 

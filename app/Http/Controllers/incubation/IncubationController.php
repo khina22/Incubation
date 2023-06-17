@@ -25,6 +25,12 @@ class IncubationController extends Controller
         // dd($login_data);
         LoginModel::create($login_data);
         
-        return redirect()->away('/pages/admindashboard');
+        return redirect()->route('pages/admindashboard');
     }
+
+    public function admindashboard(){
+
+        return view ('pages/admindashboard');
+    }
+
 }
