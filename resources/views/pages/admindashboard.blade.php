@@ -219,25 +219,25 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/mentors" class="nav-link active">
+                <a href="/listmentors" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Mentors</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/event" class="nav-link">
+                <a href="/listevent" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Event</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/advisoryboard" class="nav-link">
+                <a href="/listadvisory" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Advisory Board</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/incubatees" class="nav-link">
+                <a href="/listincubatee" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Incubatees</p>
                 </a>
@@ -249,9 +249,21 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/stakeholder" class="nav-link">
+                <a href="/liststakeholder" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Stakeholder</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/listcoaching" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Coaching and Facilities Tools</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/applicationretrieve" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Application</p>
                 </a>
               </li>
             </ul>

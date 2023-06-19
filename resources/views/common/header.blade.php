@@ -8,24 +8,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="welcome" class="nav-item nav-link active">Home</a>
+                <a href="/" class="nav-item nav-link active">Home</a>
                 <a href="about" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Application</a>
-                <a href="service.html" class="nav-item nav-link">Stakeholders</a>
-                <a href="service.html" class="nav-item nav-link">Incubatees</a>
-                <a href="service.html" class="nav-item nav-link">Events</a>
-                <a href="contact.html" class="nav-item nav-link">Feedback</a>
+                <a href="application" class="nav-item nav-link">Application</a>
+                <a href="eventretrieve" class="nav-item nav-link">Events</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Assistance</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="price.html" class="dropdown-item">Advisory Board</a>
+                        <a href="advisoryretrieve" class="dropdown-item">Advisory Board</a>
                         <a href="mentorsretrieve" class="dropdown-item">Mentors</a>
-                        <a href="feature.html" class="dropdown-item">Coaching tools and facilities</a>
+                        <a href="coachingretrieve" class="dropdown-item">Coaching tools and facilities</a>
                     </div>
                 </div>
                 <a href="login" class="nav-item nav-link">Login</a>
             </div>
-            <h4 class="m-0 pe-lg-5 d-none d-lg-block"><i class="fa fa-headphones text-primary me-3"></i>17924980</h4>
+            <img src="template\img\carousel-3.png" alt="Phone Icon" class="me-2" style="width:50px">
         </div>
     </nav>
     <!-- Navbar End -->

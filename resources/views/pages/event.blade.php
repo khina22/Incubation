@@ -41,7 +41,7 @@
     }
 </style>
 
-<form action="/eventpost" method="POST" class="my-form">
+<form action="/eventpost" method="POST" class="my-form" enctype="multipart/form-data">
     <h2>Add Event</h2>
     @csrf
 
@@ -71,8 +71,8 @@
     </div>
 
     <div class="form-group">
-        <label for="profile_pic"> Picture:</label>
-        <input type="file" id="profile_pic" name="event_pic" accept="image/*" class="form-control-file" required>
+        <label for="event_pic"> Picture:</label>
+        <input type="file" id="event_pic" name="event_pic" accept="image/*" class="form-control-file" required>
     </div>
 
     <button type="submit" class="btn btn-primary">Add Event</button>

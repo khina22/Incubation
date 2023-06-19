@@ -69,11 +69,11 @@
     <form action="/userlogin" method="post">
       @csrf
       <div class="form-group">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+        <label for="username">Email</label>
+        <input type="text" id="username" name="email" required>
       </div>
       <div class="form-group">
-        <label for="password">Password:</label>
+        <label for="password">Password</label>
         <input type="password" id="password" name="password" required>
       </div>
       

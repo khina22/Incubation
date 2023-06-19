@@ -2,10 +2,11 @@
     .feedback-form {
         max-width: 500px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
         background-color: #f9f9f9;
+        margin-top: 50px;
     }
 
     .feedback-form h2 {
@@ -39,7 +40,6 @@
 
     .feedback-form button[type="submit"] {
         display: block;
-        width: 100%;
         padding: 10px;
         margin-top: 10px;
         background-color: #007bff;
@@ -54,9 +54,11 @@
         background-color: #0056b3;
     }
 </style>
+@include('common.header')
+@include('common.css')
 
 <form action="/feedbackpost" method="POST" class="feedback-form">
-    <h2>Feedback Form</h2>
+    <h2>Feedback </h2>
     @csrf
 
     <div class="form-group">
@@ -76,8 +78,10 @@
 
     <div class="form-group">
         <label for="feedback">Your Feedback:</label>
-        <textarea id="description" name="description" placeholder="Enter your feedback" required></textarea>
+        <textarea id="feedback" name="feedback" placeholder="Enter your feedback" required></textarea>
     </div>
-
+    
     <button type="submit">Submit Feedback</button>
 </form>
+@include('common.footer')
+

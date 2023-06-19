@@ -46,7 +46,7 @@
         <td>{{ $data->name }}</td>
         <td>{{ $data->contact_no }}</td>
         <td>{{ $data->email }}</td>
-        <td>{{ $data->description }}</td>
+        <td>{{ $data->feedback }}</td>
       </tr>
       @endforeach
     </tbody>

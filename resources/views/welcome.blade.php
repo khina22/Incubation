@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <title>Logistica - Shipping Company Website Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
@@ -31,7 +31,38 @@
     <link href="{{asset('template/css/style.css')}}" rel="stylesheet">
 </head>
 
+
 <body>
+
+     <!-- Navbar Start -->
+ <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
+        <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
+            <h2 class="mb-2 text-white">Incubation</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="/" class="nav-item nav-link active">Home</a>
+                <a href="about" class="nav-item nav-link">About</a>
+                <a href="application" class="nav-item nav-link">Application</a>
+                <a href="eventretrieve" class="nav-item nav-link">Events</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Assistance</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="advisoryretrieve" class="dropdown-item">Advisory Board</a>
+                        <a href="mentorsretrieve" class="dropdown-item">Mentors</a>
+                        <a href="coachingretrieve" class="dropdown-item">Coaching tools and facilities</a>
+                    </div>
+                </div>
+                <a href="login" class="nav-item nav-link">Login</a>
+            </div>
+             <img src="template\img\carousel-3.png" alt="Phone Icon" class="me-2" style="width:50px">
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -39,37 +70,7 @@
         </div>
     </div>
     <!-- Spinner End -->
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
-        <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
-            <h2 class="mb-2 text-white">JNEC_Incubation</h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="#" class="nav-item nav-link active">Home</a>
-                <a href="about" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Application</a>
-                <a href="eventretrieve" class="nav-item nav-link">Events</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Assistance</a>
-                    <div class="dropdown-menu fade-up m-0">
-                        <a href="advisoryretrieve" class="dropdown-item">Advisory Board</a>
-                        <a href="mentorsretrieve" class="dropdown-item">Mentors</a>
-                        <a href="feature.html" class="dropdown-item">Coaching tools and facilities</a>
-                    </div>
-                </div>
-                <a href="login" class="nav-item nav-link">Login</a>
-            </div>
-            <h4 class="m-0 pe-lg-5 d-none d-lg-block"><i class="fa fa-headphones text-primary me-3"></i>17915066</h4>
-        </div>
-    </nav>
-    <!-- Navbar End -->
-
-
+    
     <!-- Carousel Start -->
     <div class="container-fluid p-0 pb-5">
         <div class="owl-carousel header-carousel position-relative mb-5">
@@ -82,8 +83,6 @@
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">JNEC-incubation</h5>
                                 <h1 class="display-3 text-white animated slideInDown mb-4">#1 Destination for Your <span class="text-primary">Entrepreneurial</span> Dream</h1>
                                 <p class="fs-5 fw-medium text-white mb-4 pb-2">Great ideas are like seeds in need of incubation; with the right nurturing, they grow into mighty trees of success..</p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -105,7 +104,7 @@
                         <i class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
                         <div class="ps-4">
                             <h6>Call for any query!</h6>
-                            <h3 class="text-primary m-0">+975 17924980</h3>
+                            <h3 class="text-primary m-0">+975 17925066</h3>
                         </div>
                     </div>
                     </div>
@@ -140,12 +139,6 @@
     <!-- Fact End -->
 
     <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container py-5">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-secondary text-uppercase">Our Services</h6>
-                <h1 class="mb-5">Explore Our Services</h1>
-            </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item p-4">
@@ -181,43 +174,44 @@
     </div>
     <!-- Service End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
-        <div class="container py-5">
-        <div class="row g-5 justify-content-center text-center">
-    <div class="col-lg-3 col-md-6">
-        <h4 class="text-light mb-4">Address</h4>
-        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jigme Namgyel engineering college</p>
-        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-        <div class="d-flex pt-2">
-            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+    <div class="container-xxl py-5">
+    <div class="container py-5">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase">Successful Startups</h6>
+            <h1 class="mb-5">Recent Successful Startups</h1>
         </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-        <h4 class="text-light mb-4">Quick Links</h4>
-        <a class="btn btn-link" href="">About</a>
-        <a class="btn btn-link" href="">Stakeholder</a>
-        <a class="btn btn-link" href="">Incubatees</a>
-        <a class="btn btn-link" href="">Feedback</a>
-    </div>
-</div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="template/img/1.jpg" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Startup 1</h5>
+                        <p class="card-text">Description of Startup 1.</p>
 
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="https://www.jnec.edu.bt/en/">https://www.jnec.edu.bt/en/</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="template/img/2.jpg" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Startup 2</h5>
+                        <p class="card-text">Description of Startup 2.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="template/img/3.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Startup 3</h5>
+                        <p class="card-text">Description of Startup 3.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+</div>
 
 
     <!-- Back to Top -->
@@ -236,5 +230,6 @@
     <!-- Template Javascript -->
     <script src="{{asset('template/js/main.js')}}"></script>
 </body>
+@include('common.footer');
 
 </html>

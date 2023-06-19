@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Profile Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,7 +13,7 @@
     .profiles-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
@@ -23,7 +24,6 @@
       text-align: center;
       padding: 20px;
       margin-bottom: 20px;
-      background-color: #f2f2f2;
     }
     
     .profile img {
@@ -43,18 +43,39 @@
       margin: 0;
       font-size: 18px;
     }
+
+    .stakeholder-heading {
+      margin: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+    } 
   </style>
 </head>
+@include('common.header')
+@include('common.css')
 <body>
+<h2 class="stakeholder-heading">Stakeholders</h2>
 
-  @foreach ($stakeholder_data as $data)
-      <h1>{{ $data->name }}</h1>
-      <p>{{ $data->email}}</p>
-      <p>{{ $data->contact_no }}</p>
-      <p>{{ $data->organization }}</p>
-      <p>{{ $data->designation }}</p>
+<div class="container">
+  <div class="row profiles-container">
+    @foreach ($stakeholder_data as $data)
+    <div class="col-md-4">
+      <div class="profile">
+        <img src="/profile_pic/{{$data->pro_pic}}" onerror="this.src='/template/img/carousel-3.png'" alt="User profile picture" style="height: 150px; width: 150px;">
+        <h1>{{ $data->name }}</h1>
+        <p>{{ $data->email }}</p>
+        <p>{{ $data->contact_no }}</p>
+        <p>{{ $data->organization }}</p>
+        <p>{{ $data->designation }}</p>
+      </div>
     </div>
-  @endforeach
+    @endforeach
+  </div>
 </div>
+
+@include('common.footer')
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

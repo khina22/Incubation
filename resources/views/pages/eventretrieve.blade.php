@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Profile Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -29,7 +30,6 @@
     .profile img {
       width: 150px;
       height: 150px;
-      border-radius: 50%;
       object-fit: cover;
       margin-bottom: 10px;
     }
@@ -43,20 +43,39 @@
       margin: 0;
       font-size: 18px;
     }
+
+    .event-heading {
+      margin: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-<div class="profiles-container">
-  @foreach ($event_data as $data)
-    <div class="profile">
-      <img src="{{ asset('storage/profile_pictures/' . $data->pro_pic) }}" alt="Profile Picture">
-      <h1>{{ $data->title }}</h1>
-      <p>{{ $data->description }}</p>
-      <p>{{ $data->date }}</p>
-      <p>{{ $data->venue }}</p>
-      <p>{{ $data->organizer }}</p>
+@include('common.header')
+@include('common.css')
+
+<h2 class="event-heading">Event</h2>
+<div class="container">
+  <div class="row">
+    @foreach ($event_data as $data)
+    <div class="col-md-4">
+      <div class="profile">
+        <img src="/profile_pic/{{$data->pro_pic}}" onerror="this.src='/template/img/carousel-3.png'" alt="User profile picture" style="height: 200px; width: 250px;">
+        <h1>{{ $data->title }}</h1>
+        <p>{{ $data->description }}</p>
+        <p>{{ $data->date }}</p>
+        <p>{{ $data->venue }}</p>
+        <p>{{ $data->organizer }}</p>
+      </div>
     </div>
-  @endforeach
+    @endforeach
+  </div>
 </div>
+
+@include('common.footer')
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

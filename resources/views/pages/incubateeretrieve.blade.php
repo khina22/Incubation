@@ -23,7 +23,6 @@
       text-align: center;
       padding: 20px;
       margin-bottom: 20px;
-      background-color: #f2f2f2;
     }
     
     .profile img {
@@ -43,20 +42,32 @@
       margin: 0;
       font-size: 18px;
     }
+
+    .incubatee-heading {
+      margin: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+    } 
+
   </style>
 </head>
+@include('common.header')
+@include('common.css')
 <body>
+<h2 class="incubatee-heading">Incubatees</h2>
 <div class="profiles-container">
   @foreach ($incubatee_data as $data)
     <div class="profile">
-      <img src="{{ asset('storage/profile_pictures/' . $data->pro_pic) }}" alt="Profile Picture">
+      <img src="/profile_pic/{{$data->pro_pic}}" alt="Profile Picture" width="150" height="150">
       <h1>{{ $data->name }}</h1>
       <p>{{ $data->email }}</p>
       <p>{{ $data->contact_no }}</p>
       <p>{{ $data->description }}</p>
     </div>
-    </div>
   @endforeach
 </div>
 </body>
+@include('common.footer')
 </html>

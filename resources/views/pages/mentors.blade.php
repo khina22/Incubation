@@ -51,18 +51,13 @@
     </div>
 
     <div class="form-group">
-        <label for="contact_no">Contact Number:</label>
-        <input type="tel" id="contact_no" name="contact_no" class="form-control" required>
+        <label for="text">Designation:</label>
+        <textarea id="designation" name="designation" class="form-control" rows="4" required></textarea>
     </div>
 
     <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" class="form-control" required>
-    </div>
-
-    <div class="form-group">
-        <label for="description">Description:</label>
-        <textarea id="description" name="description" class="form-control" rows="4" required></textarea>
+        <label for="text">Affiliation:</label>
+        <textarea id="affiliation" name="affiliation" class="form-control" rows="4" required></textarea>
     </div>
 
     <div class="form-group">

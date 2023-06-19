@@ -76,7 +76,7 @@
 <body>
   <div class="form-container">
     <h2>Add Stakeholder</h2>
-    <form action="/stakeholderpost" method="POST">
+    <form action="/stakeholderpost" method="POST" enctype="multipart/form-data" >
       @csrf
       <div class="form-group">
         <label for="name">Name:</label>
@@ -102,6 +102,11 @@
         <label for="designation">Designation:</label>
         <input type="text" id="designation" name="designation" placeholder="Enter stakeholder's designation">
       </div>
+
+      <div class="form-group">
+        <label for="pro_pic"> Picture:</label>
+        <input type="file" id="pro_pic" name="pro_pic" accept="image/*" class="form-control-file" required>
+    </div>
 
 
       <button type="submit">Add Stakeholder</button>

@@ -51,23 +51,18 @@
     </div>
 
     <div class="form-group">
-        <label for="contact_no">Contact Number:</label>
-        <input type="tel" id="contact_no" name="contact_no" class="form-control" required>
+        <label for="text">Designation:</label>
+        <textarea id="designation" name="designation" class="form-control" rows="4" required></textarea>
     </div>
 
     <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" class="form-control" required>
-    </div>
-
-    <div class="form-group">
-        <label for="description">Description:</label>
-        <textarea id="description" name="description" class="form-control" rows="4" required></textarea>
+        <label for="text">Affiliation:</label>
+        <textarea id="affiliation" name="affiliation" class="form-control" rows="4" required></textarea>
     </div>
 
     <div class="form-group">
         <label for="profile_pic">Profile Picture:</label>
-        <input type="file" id="profile_pic" name="profile_pic" accept="image/*" class="form-control-file" required>
+        <input type="file" id="profile_pic" name="advisory_pic" accept="image/*" class="form-control-file" required>
     </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
