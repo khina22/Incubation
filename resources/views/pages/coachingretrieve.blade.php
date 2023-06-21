@@ -45,7 +45,7 @@
       font-size: 18px;
     }
 
-    .event-heading {
+    .coaching-tools-heading {
       margin: 20px 0;
       font-size: 28px;
       font-weight: bold;
@@ -58,20 +58,31 @@
 @include('common.header')
 @include('common.css')
 
-<h2 class="event-heading">Coaching Tools and Facility</h2>
-<div class="container">
-  <div class="row">
-    @foreach ($coaching_data as $data)
-      <div class="col-md-4">
-        <div class="profile">
-          <img src="/profile_pic/{{$data->pic}}" onerror="this.src='/template/img/carousel-3.png'" alt="User profile picture" style="height: 150px; width: 150px;">
-          <p>{{ $data->coachingtools }}</p>
-          <p>{{ $data->facilitytools }}</p>
-        </div>
+<section class="custom-section">
+  <div class="container">
+    <h2 class="coaching-tools-heading">Coaching Tools and Facility</h2>
+
+    <div class="coaching-tools-container">
+      <div class="coaching-tools-description">
+        <p>
+          Coaching tools and facilities refer to the resources, programs, and physical spaces provided by an incubation center to support startups in their growth and development through coaching and mentoring. These tools and facilities are designed to enhance the learning, skill development, and overall progress of the startups.
+        </p>
       </div>
-    @endforeach
+
+      <div class="row justify-content-center">
+        @foreach ($coaching_data as $data)
+          <div class="col-md-4">
+            <div class="profile">
+              <img src="/profile_pic/{{$data->pic}}" onerror="this.src='/template/img/carousel-3.png'" alt="User profile picture" style="height: 150px; width: 150px;">
+              <p>{{ $data->coachingtools }}</p>
+              <p>{{ $data->facilitytools }}</p>
+            </div>
+          </div>
+        @endforeach
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
 @include('common.footer')
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
