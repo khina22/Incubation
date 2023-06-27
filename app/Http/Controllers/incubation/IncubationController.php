@@ -21,41 +21,26 @@ class IncubationController extends Controller
     }
 
     public function userlogin(Request $request)
-{
-    $email = $request->email;
-    $password = $request->password;
+    {
+    $login_data = [
+        'email'    => $request->email,
+        'password' => $request->password,
+    ];
 
-    // Check if the email and password match the allowed credentials
-    if ($email === 'shankharsharma.jnec@rub.edu.bt' && $password === 'sharma123@') {
+    // Check if the email and password combination exists in the database
+    $admin = LoginModel::where('email', $login_data['email'])
+        ->where('password', $login_data['password'])
+        ->first();
 
-        // Check if the credentials already exist in the database
-        $existingCredentials = LoginModel::where('email', $email)->where('password', $password)->exists();
-
-        if (!$existingCredentials) {
-            // Create the login data
-            $login_data = [
-                'email' => $email,
-                'password' => $password,
-                'created_by' => 1,
-                'created_at' => date('Y-m-d h:i:s'),
-                'updated_by' => 1,
-                'updated_at' => date('Y-m-d h:i:s'),
-            ];
-
-            LoginModel::create($login_data);
-
-            // Redirect to the admin dashboard with a success message
-            return redirect()->route('pages/admindashboard')->with('success', 'Login successful!');
-        }
-
-        // Redirect to the admin dashboard with a success message (already logged in)
-        return redirect()->route('pages/admindashboard')->with('success', 'Already logged in!');
+    if ($admin) {
+        // Email and password combination exists, redirect the user to the desired location
+        return redirect()->away('pages/admindashboard');
+    } else {
+        // Email and password combination does not exist in the database, handle the error accordingly
+        // For example, you can return an error message or redirect the user back to the login page with an error indicator
+        return redirect()->back()->with('error', 'Invalid email or password');
     }
-
-    // If the email and password don't match, redirect back to the login page with an error message
-    return redirect()->back()->with('error', 'Incorrect credentials');
 }
-
 // Admin dashboard route
 public function admindashboard()
 {

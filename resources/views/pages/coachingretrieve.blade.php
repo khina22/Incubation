@@ -84,21 +84,7 @@
       </div>
     </div>
   </div>
-</section>
-<h2 class="event-heading">Coaching Tools and Facility</h2>
-<div class="container">
-  <div class="row">
-    @foreach ($coaching_data as $data)
-      <div class="col-md-4">
-        <div class="profile">
-          <img src="/profile_pic/{{$data->pic}}" onerror="this.src='/template/img/carousel-3.png'" alt="User profile picture" style="height: 150px; width: 150px;">
-          <h1>{{ $data->coachingtools }}</h1>
-          <p>{{ $data->facilitytools }}</p>
-        </div>
-      </div>
-    @endforeach
-  </div>
-</div>
+  </section>
 
 @include('common.footer')
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
